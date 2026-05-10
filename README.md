@@ -1,5 +1,5 @@
 ### 🍒 Hiii ! I am Neha
-https://profile-card-ten-green.vercel.app/api/card?username=nehaprasad1&type=flower
+https://profile-card-ten-green.vercel.app/api/card?username=nehaprasad1&type=fire
 🤖 An aspiring Software Engineer | AI & Full Stack Enthusiast ,here to share my journey and learning in tech<br>🎓 Studying Data science (BSc) at IIT Madras and Computer Science(B.Tech) at CIT R.<br>💻 currently learning DL , Full Stack!
 
 
