@@ -1,224 +1,360 @@
-```aura width=800 height=620
-<div style={{
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  width: '100%',
-  height: '100%',
-  background: '#0B0813',
-  borderRadius: '16px',
-  padding: '45px 40px',
-  boxSizing: 'border-box',
-  fontFamily: 'Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, sans-serif',
-  position: 'relative',
-  overflow: 'hidden',
-  border: '1px solid #231633'
+```aura width=860 height=200
+ <div style={{
+ width: '100%', height: '100%', background: '#08080c',
+ display: 'flex', alignItems: 'center', fontFamily: 'Inter',
+ position: 'relative', overflow: 'hidden', borderRadius: 16,
+ border: '1px solid rgba(110,80,220,0.18)'
 }}>
-  {/* Cyberpunk Pink & Purple Ambient Orb Glows */}
-  <div style={{
-    position: 'absolute',
-    top: '-40px',
-    left: '10%',
-    width: '320px',
-    height: '320px',
-    borderRadius: '50%',
-    background: 'radial-gradient(circle, rgba(219,39,119,0.25) 0%, rgba(0,0,0,0) 70%)',
-    filter: 'blur(40px)'
-  }} />
-  <div style={{
-    position: 'absolute',
-    top: '120px',
-    right: '10%',
-    width: '320px',
-    height: '320px',
-    borderRadius: '50%',
-    background: 'radial-gradient(circle, rgba(147,51,234,0.25) 0%, rgba(0,0,0,0) 70%)',
-    filter: 'blur(40px)'
-  }} />
 
-  {/* Technical Corner Brackets */}
-  <div style={{ position: 'absolute', top: '20px', left: '20px', width: '16px', height: '16px', borderTop: '2px solid rgba(219,39,119,0.5)', borderLeft: '2px solid rgba(219,39,119,0.5)' }} />
-  <div style={{ position: 'absolute', top: '20px', right: '20px', width: '16px', height: '16px', borderTop: '2px solid rgba(147,51,234,0.5)', borderRight: '2px solid rgba(147,51,234,0.5)' }} />
-  <div style={{ position: 'absolute', bottom: '20px', left: '20px', width: '16px', height: '16px', borderBottom: '2px solid rgba(147,51,234,0.5)', borderLeft: '2px solid rgba(147,51,234,0.5)' }} />
-  <div style={{ position: 'absolute', bottom: '20px', right: '20px', width: '16px', height: '16px', borderBottom: '2px solid rgba(219,39,119,0.5)', borderRight: '2px solid rgba(219,39,119,0.5)' }} />
+ <style>
+   {`
+     @keyframes float-slow {
+       0%, 100% { transform: translateX(0px); opacity: 0.8; }
+       50% { transform: translateX(350px); opacity: 1.2; }
+     }
+     @keyframes float-medium {
+       0%, 100% { transform: translateX(0px); opacity: 0.7; }
+       50% { transform: translateX(-250px); opacity: 1.1; }
+     }
+     @keyframes float-fast {
+       0%, 100% { transform: translateX(0px); opacity: 0.9; }
+       50% { transform: translateX(200px); opacity: 0.6; }
+     }
+     @keyframes float-diagonal {
+       0%, 100% { transform: translateX(0px); opacity: 0.75; }
+       50% { transform: translateX(300px); opacity: 1.0; }
+     }
+     @keyframes float-wave {
+       0%, 100% { transform: translateX(0px); opacity: 0.65; }
+       33% { transform: translateX(-160px); opacity: 0.9; }
+       66% { transform: translateX(80px); opacity: 1.0; }
+     }
+     @keyframes float-pulse {
+       0%, 100% { transform: scale(1); opacity: 0.8; }
+       50% { transform: scale(1.3); opacity: 0.4; }
+     }
+     #glow-1 { animation: float-slow 8s ease-in-out infinite; }
+     #glow-2 { animation: float-medium 12s ease-in-out infinite; }
+     #glow-3 { animation: float-fast 9s ease-in-out infinite; }
+     #glow-4 { animation: float-slow 11s ease-in-out infinite reverse; }
+     #glow-5 { animation: float-medium 14s ease-in-out infinite reverse; }
+     #glow-6 { animation: float-diagonal 10s ease-in-out infinite; }
+     #glow-7 { animation: float-wave 13s ease-in-out infinite; }
+     #glow-8 { animation: float-pulse 7s ease-in-out infinite; }
+   `}
+ </style>
 
-  {/* ==================== SECTION 1: HEADER & BIO ==================== */}
-  <h1 style={{
-    color: '#FFFFFF',
-    fontSize: '46px',
-    fontWeight: '900',
-    margin: '10px 0 6px 0',
-    letterSpacing: '8px',
-    textShadow: '0 0 20px rgba(219,39,119,0.5)'
-  }}>
-    NEHA PRASAD
-  </h1>
+ <svg width="860" height="200" style={{ position: 'absolute', top: 0, left: 0 }}>
+   <defs>
+     <radialGradient id="g1" cx="50%" cy="50%" r="50%">
+       <stop offset="0%" stopColor="rgba(110,20,210,0.72)" />
+       <stop offset="40%" stopColor="rgba(90,15,180,0.35)" />
+       <stop offset="70%" stopColor="rgba(90,15,180,0)" />
+     </radialGradient>
+     <radialGradient id="g2" cx="50%" cy="50%" r="50%">
+       <stop offset="0%" stopColor="rgba(40,60,255,0.6)" />
+       <stop offset="45%" stopColor="rgba(30,50,200,0.25)" />
+       <stop offset="70%" stopColor="rgba(30,50,200,0)" />
+     </radialGradient>
+     <radialGradient id="g3" cx="50%" cy="50%" r="50%">
+       <stop offset="0%" stopColor="rgba(0,130,255,0.45)" />
+       <stop offset="50%" stopColor="rgba(0,100,220,0.18)" />
+       <stop offset="70%" stopColor="rgba(0,100,220,0)" />
+     </radialGradient>
+     <radialGradient id="g4" cx="50%" cy="50%" r="50%">
+       <stop offset="0%" stopColor="rgba(0,190,230,0.32)" />
+       <stop offset="70%" stopColor="rgba(0,190,230,0)" />
+     </radialGradient>
+     <radialGradient id="g5" cx="50%" cy="50%" r="50%">
+       <stop offset="0%" stopColor="rgba(90,30,200,0.38)" />
+       <stop offset="70%" stopColor="rgba(90,30,200,0)" />
+     </radialGradient>
+     <radialGradient id="g6" cx="50%" cy="50%" r="50%">
+       <stop offset="0%" stopColor="rgba(160,30,255,0.55)" />
+       <stop offset="45%" stopColor="rgba(130,20,220,0.22)" />
+       <stop offset="70%" stopColor="rgba(130,20,220,0)" />
+     </radialGradient>
+     <radialGradient id="g7" cx="50%" cy="50%" r="50%">
+       <stop offset="0%" stopColor="rgba(20,60,255,0.42)" />
+       <stop offset="50%" stopColor="rgba(10,40,200,0.16)" />
+       <stop offset="70%" stopColor="rgba(10,40,200,0)" />
+     </radialGradient>
+     <radialGradient id="g8" cx="50%" cy="50%" r="50%">
+       <stop offset="0%" stopColor="rgba(0,170,255,0.40)" />
+       <stop offset="50%" stopColor="rgba(0,130,220,0.15)" />
+       <stop offset="70%" stopColor="rgba(0,130,220,0)" />
+     </radialGradient>
+   </defs>
 
-  <div style={{
-    display: 'flex',
-    color: '#E9D5FF',
-    fontSize: '12px',
-    fontWeight: '600',
-    letterSpacing: '4px',
-    textTransform: 'uppercase',
-    marginBottom: '20px',
-    opacity: '0.9'
-  }}>
-    Data Engineer // MLOps &amp; AI Enthusiast
-  </div>
+   <ellipse id="glow-1" cx="180" cy="230" rx="260" ry="190" fill="url(#g1)" />
+   <ellipse id="glow-2" cx="300" cy="240" rx="220" ry="160" fill="url(#g2)" />
+   <ellipse id="glow-3" cx="420" cy="240" rx="180" ry="140" fill="url(#g3)" />
+   <ellipse id="glow-4" cx="550" cy="250" rx="150" ry="120" fill="url(#g4)" />
+   <ellipse id="glow-5" cx="750" cy="250" rx="130" ry="110" fill="url(#g5)" />
+   <ellipse id="glow-6" cx="300" cy="240" rx="180" ry="140" fill="url(#g6)" />
+   <ellipse id="glow-7" cx="490" cy="230" rx="220" ry="170" fill="url(#g7)" />
+   <ellipse id="glow-8" cx="590" cy="250" rx="150" ry="130" fill="url(#g8)" />
+ </svg>
 
-  <div style={{
-    display: 'flex',
-    color: '#D1D5DB',
-    fontSize: '14px',
-    lineHeight: '1.6',
-    textAlign: 'center',
-    maxWidth: '620px',
-    marginBottom: '16px',
-    fontWeight: '400'
-  }}>
-    🍒 Hiii! I'm an aspiring Data Engineer and AI/ML enthusiast focused on building scalable data pipelines, streaming architectures, and automating machine learning workflows. Welcome to my tech journey!
-  </div>
+ <div style={{
+   position: 'absolute', left: 48, top: 52, width: 96, height: 96,
+   borderRadius: 48, background: 'linear-gradient(135deg, #6622ee, #0088ff)',
+   display: 'flex', alignItems: 'center', justifyContent: 'center',
+ }}>
+   <img src={(github && github.user && github.user.avatarUrl) || 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'} width={88} height={88} style={{ borderRadius: 44 }} />
+ </div>
 
-  <div style={{
-    display: 'flex',
-    gap: '12px',
-    marginBottom: '30px',
-    flexWrap: 'wrap',
-    justifyContent: 'center'
-  }}>
-    <div style={{ display: 'flex', background: 'rgba(147, 51, 234, 0.15)', border: '1px solid rgba(147, 51, 234, 0.3)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '11px', fontFamily: 'Consolas, monospace' }}>
-      🎓 BSc Data Science @ IIT Madras
-    </div>
-    <div style={{ display: 'flex', background: 'rgba(219, 39, 119, 0.15)', border: '1px solid rgba(219, 39, 119, 0.3)', color: '#FCE7F3', padding: '4px 12px', borderRadius: '4px', fontSize: '11px', fontFamily: 'Consolas, monospace' }}>
-      🎓 B.Tech Computer Science
-    </div>
-  </div>
-
-  <div style={{ width: '100%', height: '1px', background: 'linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(255,255,255,0.08) 50%, rgba(0,0,0,0) 100%)', marginBottom: '30px' }} />
-
-  {/* ==================== SECTION 2: DYNAMIC METRICS ==================== */}
-  <div style={{
-    display: 'flex',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    width: '90%',
-    fontFamily: 'Consolas, monospace',
-    marginBottom: '35px'
-  }}>
-    <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'center', width: '30%' }}>
-      <div style={{ color: '#FFFFFF', fontSize: '36px', fontWeight: 'bold', letterSpacing: '-1px' }}>$user.public_repos</div>
-      <div style={{ color: '#DB2777', fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', marginTop: '6px', fontWeight: '600' }}>Repositories</div>
-    </div>
-    <div style={{ width: '1px', height: '40px', background: 'rgba(255,255,255,0.05)' }} />
-    <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'center', width: '30%' }}>
-      <div style={{ color: '#FFFFFF', fontSize: '36px', fontWeight: 'bold', letterSpacing: '-1px' }}>$stats.commits</div>
-      <div style={{ color: '#9333EA', fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', marginTop: '6px', fontWeight: '600' }}>Commits</div>
-    </div>
-    <div style={{ width: '1px', height: '40px', background: 'rgba(255,255,255,0.05)' }} />
-    <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'center', width: '30%' }}>
-      <div style={{ color: '#FFFFFF', fontSize: '36px', fontWeight: 'bold', letterSpacing: '-1px' }}>$stats.stars</div>
-      <div style={{ color: '#DB2777', fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', marginTop: '6px', fontWeight: '600' }}>Stars</div>
-    </div>
-  </div>
-
-  {/* ==================== SECTION 3: SOCIALS ABOVE TECH STACK ==================== */}
-  <div style={{
-    display: 'flex',
-    gap: '12px',
-    justifyContent: 'center',
-    width: '90%',
-    marginBottom: '30px'
-  }}>
-    <a href="[https://linkedin.com/in/18nehaprasad/](https://linkedin.com/in/18nehaprasad/)" target="_blank" style={{ display: 'flex' }}>
-      <img src="[https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&amp;logoColor=white](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&amp;logoColor=white)" alt="LinkedIn" />
-    </a>
-    <a href="mailto:nehap.works@gmail.com" style={{ display: 'flex' }}>
-      <img src="[https://img.shields.io/badge/Email-D14836?logo=gmail&amp;logoColor=white](https://img.shields.io/badge/Email-D14836?logo=gmail&amp;logoColor=white)" alt="Email" />
-    </a>
-  </div>
-
-  {/* ==================== SECTION 4: TECH STACK ANALYTICS ==================== */}
-  <div style={{
-    display: 'flex',
-    color: '#FFFFFF',
-    fontSize: '13px',
-    fontWeight: '700',
-    letterSpacing: '3px',
-    textTransform: 'uppercase',
-    marginBottom: '20px',
-    alignSelf: 'flex-start',
-    paddingLeft: '5%',
-    fontFamily: 'Consolas, monospace',
-    opacity: '0.9'
-  }}>
-    // TECH STACK ANALYTICS
-  </div>
-
-  <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '90%', marginBottom: '25px' }}>
-    {/* Row 1: Languages */}
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', alignItems: 'center' }}>
-      <span style={{ color: '#DB2777', fontSize: '11px', fontFamily: 'Consolas, monospace', minWidth: '110px' }}>LANGUAGES &gt;</span>
-      <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(219, 39, 119, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>Python</div>
-      <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(219, 39, 119, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>SQL</div>
-      <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(219, 39, 119, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>JavaScript</div>
-      <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(219, 39, 119, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>C++</div>
-      <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(219, 39, 119, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>Java</div>
-      <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(219, 39, 119, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>Bash</div>
-    </div>
-
-    {/* Row 2: Data & MLOps */}
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', alignItems: 'center' }}>
-      <span style={{ color: '#9333EA', fontSize: '11px', fontFamily: 'Consolas, monospace', minWidth: '110px' }}>DATA &amp; MLOPS &gt;</span>
-      <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(147, 51, 234, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>Docker</div>
-      <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(147, 51, 234, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>Kubernetes</div>
-      <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(147, 51, 234, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>Apache Airflow</div>
-      <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(147, 51, 234, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>DVC</div>
-      <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(147, 51, 234, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>PostgreSQL</div>
-      <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(147, 51, 234, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>MongoDB</div>
-    </div>
-
-    {/* Row 3: Frameworks */}
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', alignItems: 'center' }}>
-      <span style={{ color: '#DB2777', fontSize: '11px', fontFamily: 'Consolas, monospace', minWidth: '110px' }}>FRAMEWORKS &gt;</span>
-      <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(219, 39, 119, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>FastAPI</div>
-      <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(219, 39, 119, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>Django</div>
-      <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(219, 39, 119, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>Node.js</div>
-      <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(219, 39, 119, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>TensorFlow</div>
-      <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(219, 39, 119, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>Scikit-Learn</div>
-      <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(219, 39, 119, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>Pandas</div>
-    </div>
-  </div>
-
-  {/* Footer branding text */}
-  <div style={{
-    position: 'absolute',
-    bottom: '25px',
-    color: '#4B5563',
-    fontSize: '9px',
-    letterSpacing: '2px',
-    fontFamily: 'Consolas, monospace',
-    textTransform: 'uppercase',
-    display: 'flex'
-  }}>
-    Neha Prasad — High Performance Data Infrastructure
-  </div>
+ <div style={{ display:'flex', flexDirection:'column', marginLeft:168, gap:8, zIndex: 10 }}>
+   <div style={{ display:'flex', fontSize:38, fontWeight:800, color:'#ffffff', letterSpacing:'-1px', lineHeight:1 }}>
+     {(github && github.user && (github.user.name || github.user.login)) || 'GitHub Developer'}
+   </div>
+   <div style={{ display:'flex', fontSize:15, color:'rgba(180,165,255,0.8)', fontWeight:400, letterSpacing:'0.3px' }}>
+     {(github && github.user && github.user.bio) || 'Full-Stack Engineer · Competitive Programmer · Open Source'}
+   </div>
+   <div style={{ display:'flex', gap:8, marginTop:6 }}>
+     {['React', 'TypeScript', 'Next.js', 'C++'].map(function(tag) {
+       return (
+         <div key={tag} style={{
+           display:'flex', padding:'4px 12px', borderRadius:20,
+           background:'rgba(80,40,220,0.18)', border:'1px solid rgba(100,70,240,0.32)',
+           color:'rgba(205,195,255,0.85)', fontSize:12, fontWeight:600,
+         }}>{tag}</div>
+       );
+     })}
+   </div>
+ </div>
 </div>
 ```
 
-## 📈 GitHub Metrics
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nehaprasad1&theme=dark&dark_source=true&hide_border=true&include_all_commits=true&count_private=true&title_color=db2777&icon_color=9333ea&text_color=e9d5ff&bg_color=0b0813" height="180" />
-  <img src="https://nirzak-streak-stats.vercel.app/?user=nehaprasad1&theme=tokyonight&hide_border=true&background=0b0813&ring=db2777&fire=9333ea" height="180" />
-</p>
+```aura width=860 height=140
+(function() {
+ var stats = [
+   { label: 'Repos', value: String((github && github.stats && github.stats.totalRepos) || 0), color: '#a78bfa' },
+   { label: 'Stars', value: String((github && github.stats && github.stats.totalStars) || 0), color: '#60a5fa' },
+   { label: 'Commits', value: String((github && github.stats && github.stats.totalCommits) || 0), color: '#f59e0b' },
+ ];
 
-### Language Distribution & Contributions
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nehaprasad1&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact&title_color=db2777&text_color=e9d5ff&bg_color=0b0813" height="160" />
-  <img src="https://github-contributor-stats.vercel.app/api?username=nehaprasad1&limit=5&theme=dark&combine_all_yearly_contributions=true" height="160" />
-</p>
+ return (
+   <div style={{
+     width: '100%', height: '100%',
+     background: '#08080c',
+     display: 'flex', alignItems: 'center', justifyContent: 'center',
+     fontFamily: 'Inter', borderRadius: 16,
+     border: '1px solid rgba(110,80,220,0.18)',
+     position: 'relative', overflow: 'hidden',
+   }}>
 
----
-<p align="right">
-  <a href="https://visitcount.itsvg.in"><img src="https://visitcount.itsvg.in/api?id=nehaprasad1&icon=0&color=5" alt="Visits" /></a>
-</p>
+     <style>
+       {`
+         @keyframes float-slow {
+           0%, 100% { transform: translateX(0px); opacity: 0.8; }
+           50% { transform: translateX(350px); opacity: 1.2; }
+         }
+         @keyframes float-medium {
+           0%, 100% { transform: translateX(0px); opacity: 0.7; }
+           50% { transform: translateX(-250px); opacity: 1.1; }
+         }
+         @keyframes float-fast {
+           0%, 100% { transform: translateX(0px); opacity: 0.9; }
+           50% { transform: translateX(200px); opacity: 0.6; }
+         }
+         @keyframes float-diagonal {
+           0%, 100% { transform: translate(0px, 0px); opacity: 0.75; }
+           50% { transform: translate(120px, 30px); opacity: 1.0; }
+         }
+         @keyframes float-wave {
+           0%, 100% { transform: translateX(0px); opacity: 0.65; }
+           33% { transform: translateX(-160px); opacity: 0.9; }
+           66% { transform: translateX(80px); opacity: 1.0; }
+         }
+         @keyframes float-pulse {
+           0%, 100% { transform: scale(1); opacity: 0.8; }
+           50% { transform: scale(1.3); opacity: 0.4; }
+         }
+         #glow-1 { animation: float-slow 8s ease-in-out infinite; }
+         #glow-2 { animation: float-medium 12s ease-in-out infinite; }
+         #glow-3 { animation: float-fast 9s ease-in-out infinite; }
+         #glow-4 { animation: float-diagonal 10s ease-in-out infinite; }
+         #glow-5 { animation: float-wave 14s ease-in-out infinite; }
+       `}
+     </style>
+
+     <svg width="860" height="140" style={{ position: 'absolute', top: 0, left: 0 }}>
+       <defs>
+         <radialGradient id="g1" cx="50%" cy="50%" r="50%">
+           <stop offset="0%" stopColor="rgba(110,20,210,0.65)" />
+           <stop offset="45%" stopColor="rgba(80,15,170,0.28)" />
+           <stop offset="70%" stopColor="rgba(80,15,170,0)" />
+         </radialGradient>
+         <radialGradient id="g2" cx="50%" cy="50%" r="50%">
+           <stop offset="0%" stopColor="rgba(40,70,255,0.55)" />
+           <stop offset="45%" stopColor="rgba(20,50,200,0.22)" />
+           <stop offset="70%" stopColor="rgba(20,50,200,0)" />
+         </radialGradient>
+         <radialGradient id="g3" cx="50%" cy="50%" r="50%">
+           <stop offset="0%" stopColor="rgba(0,140,255,0.42)" />
+           <stop offset="70%" stopColor="rgba(0,140,255,0)" />
+         </radialGradient>
+         <radialGradient id="g4" cx="50%" cy="50%" r="50%">
+           <stop offset="0%" stopColor="rgba(0,195,235,0.30)" />
+           <stop offset="70%" stopColor="rgba(0,195,235,0)" />
+         </radialGradient>
+         <radialGradient id="g5" cx="50%" cy="50%" r="50%">
+           <stop offset="0%" stopColor="rgba(100,30,210,0.40)" />
+           <stop offset="70%" stopColor="rgba(100,30,210,0)" />
+         </radialGradient>
+       </defs>
+       <ellipse id="glow-1" cx="710" cy="150" rx="210" ry="150" fill="url(#g1)" />
+       <ellipse id="glow-2" cx="550" cy="140" rx="190" ry="140" fill="url(#g2)" />
+       <ellipse id="glow-3" cx="400" cy="130" rx="170" ry="130" fill="url(#g3)" />
+       <ellipse id="glow-4" cx="250" cy="140" rx="150" ry="120" fill="url(#g4)" />
+       <ellipse id="glow-5" cx="100" cy="150" rx="130" ry="110" fill="url(#g5)" />
+     </svg>
+
+     {stats.map(function(s, i) {
+       return (
+         <div key={s.label} style={{
+           flexGrow: 1, display: 'flex', flexDirection: 'column',
+           alignItems: 'center', justifyContent: 'center',
+           padding: '16px 8px',
+           borderRight: i < stats.length - 1 ? '1px solid rgba(255,255,255,0.06)' : 'none',
+           gap: 5,
+         }}>
+           <div style={{ display:'flex', fontSize:30, fontWeight:800, color:s.color, lineHeight:1 }}>
+             {s.value}
+           </div>
+           <div style={{ display:'flex', fontSize:11, color:'rgba(200,195,225,0.45)', fontWeight:600, letterSpacing:'1.5px' }}>
+             {s.label.toUpperCase()}
+           </div>
+         </div>
+       );
+     })}
+   </div>
+ );
+})()
+```
+
+```aura width=860 height=168
+(function() {
+ var topLangs = (github && github.languages && github.languages.length > 0 ? github.languages.slice(0, 6).map(function(l) { return l.name; }) : ['TypeScript', 'React', 'Next.js', 'C++', 'Go', 'Rust']);
+ var categories = [
+   { title: 'Languages', color: '#a78bfa', items: topLangs },
+   { title: 'Frameworks', color: '#60a5fa', items: ['React Native', 'React', 'Next.js'] },
+ ];
+
+ return (
+   <div style={{
+     width: '100%', height: '100%',
+     background: '#08080c',
+     display: 'flex', flexDirection: 'column',
+     fontFamily: 'Inter', padding: '18px 32px', gap: 14,
+     borderRadius: 16, border: '1px solid rgba(110,80,220,0.18)',
+     position: 'relative', overflow: 'hidden',
+   }}>
+
+     <style>
+       {`
+         @keyframes float-slow {
+           0%, 100% { transform: translateX(0px); opacity: 0.8; }
+           50% { transform: translateX(350px); opacity: 1.2; }
+         }
+         @keyframes float-medium {
+           0%, 100% { transform: translateX(0px); opacity: 0.7; }
+           50% { transform: translateX(-250px); opacity: 1.1; }
+         }
+         @keyframes float-fast {
+           0%, 100% { transform: translateX(0px); opacity: 0.9; }
+           50% { transform: translateX(200px); opacity: 0.6; }
+         }
+         @keyframes float-diagonal {
+           0%, 100% { transform: translate(0px, 0px); opacity: 0.75; }
+           50% { transform: translate(120px, 30px); opacity: 1.0; }
+         }
+         @keyframes float-wave {
+           0%, 100% { transform: translateX(0px); opacity: 0.65; }
+           33% { transform: translateX(-160px); opacity: 0.9; }
+           66% { transform: translateX(80px); opacity: 1.0; }
+         }
+         @keyframes float-pulse {
+           0%, 100% { transform: scale(1); opacity: 0.8; }
+           50% { transform: scale(1.3); opacity: 0.4; }
+         }
+         #glow-1 { animation: float-slow 9s ease-in-out infinite; }
+         #glow-2 { animation: float-medium 12s ease-in-out infinite; }
+         #glow-3 { animation: float-fast 8s ease-in-out infinite; }
+         #glow-4 { animation: float-diagonal 11s ease-in-out infinite reverse; }
+         #glow-5 { animation: float-wave 14s ease-in-out infinite reverse; }
+         #glow-6 { animation: float-pulse 6s ease-in-out infinite; }
+       `}
+     </style>
+
+     <svg width="860" height="168" style={{ position: 'absolute', top: 0, left: 0 }}>
+       <defs>
+         <radialGradient id="g1" cx="50%" cy="50%" r="50%">
+           <stop offset="0%" stopColor="rgba(115,20,215,0.68)" />
+           <stop offset="42%" stopColor="rgba(85,15,175,0.30)" />
+           <stop offset="70%" stopColor="rgba(85,15,175,0)" />
+         </radialGradient>
+         <radialGradient id="g2" cx="50%" cy="50%" r="50%">
+           <stop offset="0%" stopColor="rgba(55,55,255,0.55)" />
+           <stop offset="45%" stopColor="rgba(35,45,210,0.22)" />
+           <stop offset="70%" stopColor="rgba(35,45,210,0)" />
+         </radialGradient>
+         <radialGradient id="g3" cx="50%" cy="50%" r="50%">
+           <stop offset="0%" stopColor="rgba(0,130,255,0.42)" />
+           <stop offset="50%" stopColor="rgba(0,100,220,0.16)" />
+           <stop offset="70%" stopColor="rgba(0,100,220,0)" />
+         </radialGradient>
+         <radialGradient id="g4" cx="50%" cy="50%" r="50%">
+           <stop offset="0%" stopColor="rgba(0,185,240,0.32)" />
+           <stop offset="70%" stopColor="rgba(0,185,240,0)" />
+         </radialGradient>
+         <radialGradient id="g5" cx="50%" cy="50%" r="50%">
+           <stop offset="0%" stopColor="rgba(100,25,205,0.42)" />
+           <stop offset="70%" stopColor="rgba(100,25,205,0)" />
+         </radialGradient>
+         <radialGradient id="g6" cx="50%" cy="50%" r="50%">
+           <stop offset="0%" stopColor="rgba(60,80,255,0.35)" />
+           <stop offset="70%" stopColor="rgba(60,80,255,0)" />
+         </radialGradient>
+       </defs>
+       <ellipse id="glow-1" cx="170" cy="168" rx="260" ry="170" fill="url(#g1)" />
+       <ellipse id="glow-2" cx="320" cy="178" rx="220" ry="140" fill="url(#g2)" />
+       <ellipse id="glow-3" cx="460" cy="178" rx="190" ry="130" fill="url(#g3)" />
+       <ellipse id="glow-4" cx="590" cy="188" rx="160" ry="110" fill="url(#g4)" />
+       <ellipse id="glow-5" cx="750" cy="188" rx="140" ry="100" fill="url(#g5)" />
+       <ellipse id="glow-6" cx="420" cy="138" rx="100" ry="80" fill="url(#g6)" />
+     </svg>
+
+     <div style={{ display:'flex', fontSize:10, fontWeight:700, color:'rgba(155,140,210,0.5)', letterSpacing:'3px' }}>
+       TECH STACK
+     </div>
+     <div style={{ display:'flex', flexDirection:'column', gap:14 }}>
+       {categories.map(function(cat) {
+         return (
+           <div key={cat.title} style={{ display:'flex', alignItems:'center', gap:16 }}>
+             <div style={{ display:'flex', fontSize:10, fontWeight:700, color:cat.color, letterSpacing:'1px', width:80 }}>
+               {cat.title.toUpperCase()}
+             </div>
+             <div style={{ display:'flex', flexWrap:'wrap', gap:7 }}>
+               {cat.items.map(function(item) {
+                 return (
+                   <div key={item} style={{
+                     display:'flex', padding:'4px 13px', borderRadius:6,
+                     background:cat.color + '15', border:'1px solid ' + cat.color + '35',
+                     color:'rgba(225,220,255,0.85)', fontSize:12, fontWeight:600,
+                   }}>{item}</div>
+                 );
+               })}
+             </div>
+           </div>
+         );
+       })}
+     </div>
+   </div>
+ );
+})()
+```
+
+<br>
+<p align="center"><sub>𝗉𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 <a href="https://github.com/collectioneur/readme-aura">𝗋𝖾𝖺𝖽𝗆𝖾-𝖺𝗎𝗋𝖺</a></sub></p>
