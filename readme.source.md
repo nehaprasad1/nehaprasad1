@@ -1,4 +1,4 @@
-```aura width=800 height=1400
+```aura width=800 height=620
 <div style={{
   display: 'flex',
   flexDirection: 'column',
@@ -14,7 +14,7 @@
   overflow: 'hidden',
   border: '1px solid #231633'
 }}>
-  
+  {/* Cyberpunk Pink & Purple Ambient Orb Glows */}
   <div style={{
     position: 'absolute',
     top: '-40px',
@@ -27,7 +27,7 @@
   }} />
   <div style={{
     position: 'absolute',
-    top: '300px',
+    top: '120px',
     right: '10%',
     width: '320px',
     height: '320px',
@@ -35,24 +35,14 @@
     background: 'radial-gradient(circle, rgba(147,51,234,0.25) 0%, rgba(0,0,0,0) 70%)',
     filter: 'blur(40px)'
   }} />
-  <div style={{
-    position: 'absolute',
-    bottom: '250px',
-    left: '15%',
-    width: '400px',
-    height: '300px',
-    borderRadius: '50%',
-    background: 'radial-gradient(circle, rgba(147,51,234,0.15) 0%, rgba(0,0,0,0) 80%)',
-    filter: 'blur(40px)'
-  }} />
 
-  
+  {/* Technical Corner Brackets */}
   <div style={{ position: 'absolute', top: '20px', left: '20px', width: '16px', height: '16px', borderTop: '2px solid rgba(219,39,119,0.5)', borderLeft: '2px solid rgba(219,39,119,0.5)' }} />
   <div style={{ position: 'absolute', top: '20px', right: '20px', width: '16px', height: '16px', borderTop: '2px solid rgba(147,51,234,0.5)', borderRight: '2px solid rgba(147,51,234,0.5)' }} />
   <div style={{ position: 'absolute', bottom: '20px', left: '20px', width: '16px', height: '16px', borderBottom: '2px solid rgba(147,51,234,0.5)', borderLeft: '2px solid rgba(147,51,234,0.5)' }} />
   <div style={{ position: 'absolute', bottom: '20px', right: '20px', width: '16px', height: '16px', borderBottom: '2px solid rgba(219,39,119,0.5)', borderRight: '2px solid rgba(219,39,119,0.5)' }} />
 
-  
+  {/* ==================== SECTION 1: HEADER & BIO ==================== */}
   <h1 style={{
     color: '#FFFFFF',
     fontSize: '46px',
@@ -132,27 +122,23 @@
     </div>
   </div>
 
-  
+  {/* ==================== SECTION 3: SOCIALS ABOVE TECH STACK ==================== */}
   <div style={{
     display: 'flex',
     gap: '12px',
     justifyContent: 'center',
     width: '90%',
-    marginBottom: '35px'
+    marginBottom: '30px'
   }}>
     <a href="[https://linkedin.com/in/18nehaprasad/](https://linkedin.com/in/18nehaprasad/)" target="_blank" style={{ display: 'flex' }}>
-      <svg width="107" height="20">
-        <image href="[https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&amp;logoColor=white](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&amp;logoColor=white)" width="107" height="20" />
-      </svg>
+      <img src="[https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&amp;logoColor=white](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&amp;logoColor=white)" alt="LinkedIn" />
     </a>
     <a href="mailto:nehap.works@gmail.com" style={{ display: 'flex' }}>
-      <svg width="83" height="20">
-        <image href="[https://img.shields.io/badge/Email-D14836?logo=gmail&amp;logoColor=white](https://img.shields.io/badge/Email-D14836?logo=gmail&amp;logoColor=white)" width="83" height="20" />
-      </svg>
+      <img src="[https://img.shields.io/badge/Email-D14836?logo=gmail&amp;logoColor=white](https://img.shields.io/badge/Email-D14836?logo=gmail&amp;logoColor=white)" alt="Email" />
     </a>
   </div>
 
-  
+  {/* ==================== SECTION 4: TECH STACK ANALYTICS ==================== */}
   <div style={{
     display: 'flex',
     color: '#FFFFFF',
@@ -169,8 +155,8 @@
     // TECH STACK ANALYTICS
   </div>
 
-  <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '90%', marginBottom: '45px' }}>
-    
+  <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '90%', marginBottom: '25px' }}>
+    {/* Row 1: Languages */}
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', alignItems: 'center' }}>
       <span style={{ color: '#DB2777', fontSize: '11px', fontFamily: 'Consolas, monospace', minWidth: '110px' }}>LANGUAGES &gt;</span>
       <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(219, 39, 119, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>Python</div>
@@ -181,7 +167,7 @@
       <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(219, 39, 119, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>Bash</div>
     </div>
 
-    
+    {/* Row 2: Data & MLOps */}
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', alignItems: 'center' }}>
       <span style={{ color: '#9333EA', fontSize: '11px', fontFamily: 'Consolas, monospace', minWidth: '110px' }}>DATA &amp; MLOPS &gt;</span>
       <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(147, 51, 234, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>Docker</div>
@@ -192,7 +178,7 @@
       <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(147, 51, 234, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>MongoDB</div>
     </div>
 
-    
+    {/* Row 3: Frameworks */}
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', alignItems: 'center' }}>
       <span style={{ color: '#DB2777', fontSize: '11px', fontFamily: 'Consolas, monospace', minWidth: '110px' }}>FRAMEWORKS &gt;</span>
       <div style={{ display: 'flex', background: 'rgba(35, 22, 51, 0.4)', border: '1px solid rgba(219, 39, 119, 0.15)', color: '#E9D5FF', padding: '4px 12px', borderRadius: '4px', fontSize: '12px', fontFamily: 'Consolas, monospace' }}>FastAPI</div>
@@ -204,46 +190,7 @@
     </div>
   </div>
 
-  <div style={{ width: '100%', height: '1px', background: 'linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(255,255,255,0.08) 50%, rgba(0,0,0,0) 100%)', marginBottom: '35px' }} />
-
-  
-  <div style={{
-    display: 'flex',
-    color: '#FFFFFF',
-    fontSize: '13px',
-    fontWeight: '700',
-    letterSpacing: '3px',
-    textTransform: 'uppercase',
-    marginBottom: '25px',
-    alignSelf: 'flex-start',
-    paddingLeft: '5%',
-    fontFamily: 'Consolas, monospace',
-    opacity: '0.9'
-  }}>
-    // PRODUCTION METRICS &amp; REPO ANALYTICS
-  </div>
-
-  
-  <div style={{ display: 'flex', gap: '20px', width: '90%', justifyContent: 'center', marginBottom: '20px' }}>
-    <svg width="350" height="175">
-      <image href="[https://github-readme-stats.vercel.app/api?username=nehaprasad1&amp;theme=dark&amp;dark_source=true&amp;hide_border=true&amp;include_all_commits=true&amp;count_private=true&amp;title_color=db2777&amp;icon_color=9333ea&amp;text_color=e9d5ff&amp;bg_color=0b0813](https://github-readme-stats.vercel.app/api?username=nehaprasad1&amp;theme=dark&amp;dark_source=true&amp;hide_border=true&amp;include_all_commits=true&amp;count_private=true&amp;title_color=db2777&amp;icon_color=9333ea&amp;text_color=e9d5ff&amp;bg_color=0b0813)" width="350" height="175" />
-    </svg>
-    <svg width="350" height="175">
-      <image href="[https://nirzak-streak-stats.vercel.app/?user=nehaprasad1&amp;theme=tokyonight&amp;hide_border=true&amp;background=0b0813&amp;ring=db2777&amp;fire=9333ea](https://nirzak-streak-stats.vercel.app/?user=nehaprasad1&amp;theme=tokyonight&amp;hide_border=true&amp;background=0b0813&amp;ring=db2777&amp;fire=9333ea)" width="350" height="175" />
-    </svg>
-  </div>
-
-  
-  <div style={{ display: 'flex', gap: '20px', width: '90%', justifyContent: 'center', marginBottom: '40px' }}>
-    <svg width="350" height="155">
-      <image href="[https://github-readme-stats.vercel.app/api/top-langs/?username=nehaprasad1&amp;theme=dark&amp;hide_border=true&amp;include_all_commits=true&amp;count_private=true&amp;layout=compact&amp;title_color=db2777&amp;text_color=e9d5ff&amp;bg_color=0b0813](https://github-readme-stats.vercel.app/api/top-langs/?username=nehaprasad1&amp;theme=dark&amp;hide_border=true&amp;include_all_commits=true&amp;count_private=true&amp;layout=compact&amp;title_color=db2777&amp;text_color=e9d5ff&amp;bg_color=0b0813)" width="350" height="155" />
-    </svg>
-    <svg width="350" height="155">
-      <image href="[https://github-contributor-stats.vercel.app/api?username=nehaprasad1&amp;limit=5&amp;theme=dark&amp;combine_all_yearly_contributions=true](https://github-contributor-stats.vercel.app/api?username=nehaprasad1&amp;limit=5&amp;theme=dark&amp;combine_all_yearly_contributions=true)" width="350" height="155" />
-    </svg>
-  </div>
-
-  
+  {/* Footer branding text */}
   <div style={{
     position: 'absolute',
     bottom: '25px',
@@ -259,6 +206,19 @@
 </div>
 ```
 
+## 📈 GitHub Metrics
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=nehaprasad1&theme=dark&dark_source=true&hide_border=true&include_all_commits=true&count_private=true&title_color=db2777&icon_color=9333ea&text_color=e9d5ff&bg_color=0b0813" height="180" />
+  <img src="https://nirzak-streak-stats.vercel.app/?user=nehaprasad1&theme=tokyonight&hide_border=true&background=0b0813&ring=db2777&fire=9333ea" height="180" />
+</p>
+
+### Language Distribution & Contributions
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nehaprasad1&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact&title_color=db2777&text_color=e9d5ff&bg_color=0b0813" height="160" />
+  <img src="https://github-contributor-stats.vercel.app/api?username=nehaprasad1&limit=5&theme=dark&combine_all_yearly_contributions=true" height="160" />
+</p>
+
+---
 <p align="right">
   <a href="https://visitcount.itsvg.in"><img src="https://visitcount.itsvg.in/api?id=nehaprasad1&icon=0&color=5" alt="Visits" /></a>
 </p>
