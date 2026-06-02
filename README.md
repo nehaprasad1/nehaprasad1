@@ -2,20 +2,20 @@
 
 ## 🌐 Socials
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin\&logoColor=white)](https://linkedin.com/in/18nehaprasad/)
-[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail\&logoColor=white)](mailto:nehap.works@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/18nehaprasad/)
+[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:nehap.works@gmail.com)
 
 ## 📈 GitHub Metrics
 
 <p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=nehaprasad1&theme=dark&dark_source=true&hide_border=true&include_all_commits=true&count_private=true&title_color=db2777&icon_color=9333ea&text_color=e9d5ff&bg_color=0b0813" height="180" />
+  <img src="https://github-readme-stats.vercel.app/api?username=nehaprasad1&theme=dark&dark_source=true&hide_border=true&include_all_commits=true&count_private=true&title_color=db2777&icon_color=9[...]
   <img src="https://nirzak-streak-stats.vercel.app/?user=nehaprasad1&theme=tokyonight&hide_border=true&background=0b0813&ring=db2777&fire=9333ea" height="180" />
 </p>
 
 ### Language Distribution & Contributions
 
 <p align="left">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nehaprasad1&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact&title_color=db2777&text_color=e9d5ff&bg_color=0b0813" height="160" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nehaprasad1&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact&title_color=db2777&tex[...]
   <img src="https://github-contributor-stats.vercel.app/api?username=nehaprasad1&limit=5&theme=dark&combine_all_yearly_contributions=true" height="160" />
 </p>
 
