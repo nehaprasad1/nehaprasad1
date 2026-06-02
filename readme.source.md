@@ -117,18 +117,18 @@
     marginBottom: '35px'
   }}>
     <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'center' }}>
-      <div style={{ color: '#FFFFFF', fontSize: '36px', fontWeight: 'bold', letterSpacing: '-1px' }}>30+</div>
+      <div style={{ color: '#FFFFFF', fontSize: '36px', fontWeight: 'bold', letterSpacing: '-1px' }}>{"${user.public_repos}"}</div>
       <div style={{ color: '#DB2777', fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', marginTop: '6px', fontWeight: '600' }}>Repositories</div>
     </div>
     <div style={{ width: '1px', height: '40px', background: 'rgba(255,255,255,0.05)' }} />
     <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'center' }}>
-      <div style={{ color: '#FFFFFF', fontSize: '36px', fontWeight: 'bold', letterSpacing: '-1px' }}>1.2k+</div>
+      <div style={{ color: '#FFFFFF', fontSize: '36px', fontWeight: 'bold', letterSpacing: '-1px' }}>{"${stats.commits}"}</div>
       <div style={{ color: '#9333EA', fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', marginTop: '6px', fontWeight: '600' }}>Commits</div>
     </div>
     <div style={{ width: '1px', height: '40px', background: 'rgba(255,255,255,0.05)' }} />
     <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'center' }}>
-      <div style={{ color: '#FFFFFF', fontSize: '36px', fontWeight: 'bold', letterSpacing: '-1px' }}>15+</div>
-      <div style={{ color: '#DB2777', fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', marginTop: '6px', fontWeight: '600' }}>Projects</div>
+      <div style={{ color: '#FFFFFF', fontSize: '36px', fontWeight: 'bold', letterSpacing: '-1px' }}>{"${stats.stars}"}</div>
+      <div style={{ color: '#DB2777', fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', marginTop: '6px', fontWeight: '600' }}>Stars Earned</div>
     </div>
   </div>
 
