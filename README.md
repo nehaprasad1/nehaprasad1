@@ -9,13 +9,10 @@
 ## 📌 About Me
 - Hi, I'm Neha Prasad!
 - I'm a Data Engineering enthusiast focused on designing efficient data architectures, streamlining MLOps workflows, and exploring the intersection of AI and cloud systems.
-
-
 ## 🧠 My Focus Areas
 - data engineer
 - MLops
 - Gen-AI
-
 
 ## 📊 GitHub Stats & Trophies
 <p align="center">
@@ -28,46 +25,16 @@
   <img height="280em" src="https://github-readme-activity-graph.vercel.app/graph?username=nehaprasad1&theme=shades-of-purple&radius=10" alt="nehaprasad1's Activity Graph" />
 </p>
 
-
 ## 🛠️ Languages & Tools
+**Programming Languages :** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="22" /> Python &nbsp;|&nbsp; <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="22" /> C++ &nbsp;|&nbsp; <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="22" /> JavaScript
 
-<h3 align="center">Programming Languages</h3>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="40" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40" />
+**Data Engineering :** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apacheairflow/apacheairflow-original.svg" alt="Airflow" width="22" /> Airflow &nbsp;|&nbsp; <img src="https://www.vectorlogo.zone/logos/apache_spark/apache_spark-icon.svg" alt="Spark" width="22" /> Spark &nbsp;|&nbsp; <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" alt="Pandas" width="22" /> Pandas
 
-</p>
+**AI / Machine Learning :** <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="PyTorch" width="22" /> PyTorch &nbsp;|&nbsp; <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Sklearn" width="22" /> Scikit-Learn
 
-<h3 align="center">Database</h3>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="40" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="40" />
-  <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="SQLite" width="40" />
+**Database :** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="22" /> PostgreSQL &nbsp;|&nbsp; <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="22" /> MongoDB &nbsp;|&nbsp; <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="SQLite" width="22" /> SQLite
 
-</p>
-
-<h3 align="center">DevOps & Cloud</h3>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker" width="40" />
-  <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" alt="AWS" width="40" />
-
-</p>
-
-<h3 align="center">Tools</h3>
-<p align="center">
-  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" width="40" />
-  <img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-icon.svg" alt="VS Code" width="40" />
-  <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma" width="40" />
-
-</p>
-
-<p align="center">
-  <a href="https://github.com/nehaprasad1">
-    <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=nehaprasad1&langs_count=8&layout=compact&theme=shades-of-purple&border_radius=10" alt="Top Languages" />
-  </a>
-</p>
-
+**DevOps and Cloud :** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker" width="22" /> Docker &nbsp;|&nbsp; <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" alt="AWS" width="22" /> AWS &nbsp;|&nbsp; <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" width="22" /> Git &nbsp;|&nbsp; <img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="GitHub" width="22" /> GitHub &nbsp;|&nbsp; <img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-icon.svg" alt="VS Code" width="22" /> VS Code &nbsp;|&nbsp; <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma" width="22" /> Figma
 ## 🔗 Connect with Me
 <p align="center">
   <a href="linkdin.com/in/18nehaprasad">
