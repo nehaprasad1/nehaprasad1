@@ -40,7 +40,7 @@
   <a href="linkdin.com/in/18nehaprasad">
     <img src="https://raw.githubusercontent.com/gauravghongde/social-icons/master/SVG/Color/LinkedIN.svg" alt="LinkedIn" width="40" />
   </a>
-  <a href="mailto:nehap.works.github@gmail.com">
+  <a href="mailto:nehap.works+github@gmail.com">
     <img src="https://raw.githubusercontent.com/gauravghongde/social-icons/master/SVG/Color/Gmail.svg" alt="Gmail" width="40" />
   </a>
 </p>
